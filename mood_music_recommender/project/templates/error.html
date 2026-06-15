@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Error — Music Recommender</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e0e0e0;
+    }
+    .box {
+      background: rgba(229,62,62,0.12);
+      border: 1px solid rgba(229,62,62,0.35);
+      border-radius: 16px;
+      padding: 40px 48px;
+      text-align: center;
+      max-width: 480px;
+    }
+    .box h2 { font-size: 1.5rem; margin-bottom: 14px; color: #fc8181; }
+    .box p  { color: #a0aec0; margin-bottom: 24px; }
+    .box a  {
+      padding: 10px 24px;
+      border-radius: 10px;
+      background: linear-gradient(135deg,#e040fb,#00e5ff);
+      color: #1a1a2e;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>⚠️ Something went wrong</h2>
+    <p>{{ message }}</p>
+    <a href="/">← Go Home</a>
+  </div>
+</body>
+</html>
